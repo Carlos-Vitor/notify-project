@@ -1,0 +1,108 @@
+{% extends 'main.html' %}
+
+{% load staticfiles %}
+
+{% block content %}
+
+    <header>
+        <div class="bloco">
+            <div id="textoBanner"><h1>Notify<p id="ponto">.</p></h1>
+            <p>A great new free psd theme to showcase your new application.</p></div>
+            <div id="iconsBanner">
+                <a href=""><img src="{% static 'images/icone-ios.png' %}" alt=""></a>
+                <a href=""><img src="{% static 'images/icone-android.png' %}" alt=""></a>
+                <a href=""><img src="{% static 'images/icone-windows.png' %}" alt=""></a>
+            </div>
+        </div>
+        <div >
+            <img id="hand" src="{% static 'images/hand.png' %}" alt="">
+        </div>                
+    </header>
+    <article>
+        <div class="articleDiv">
+            <img src="{% static 'images/icone1.png' %}" alt="">
+            <h3>Editable Theme</h3>
+            <p>Lorem ipsum dolor sit amet, cosectetur adipiscing elit.
+                Suspendisse fringilla fringilla.
+            </p>
+        </div>
+        <div class="articleDiv">
+            <img src="{% static 'images/icone2.png' %}" alt="">
+            <h3>Flat Design</h3>
+            <p>Lorem ipsum dolor sit amet, cosectetur adipiscing elit.
+                    Suspendisse fringilla fringilla.</p>
+        </div>
+        <div class="articleDiv">
+            <img src="{% static 'images/icone3.png' %}" alt="">
+            <h3>Reach Your Audience</h3>
+            <p>Lorem ipsum dolor sit amet, cosectetur adipiscing elit.
+                    Suspendisse fringilla fringilla.</p>
+        </div>
+    </article>
+    <section>
+        <div id="section">
+            <h4>Get Notified Of Any Updates!</h4>
+            <p>Lorem ipsum eu ad a ut, suspendisse aliquam aenean ultricies.
+             ut ultricies inceptos lorem etiam augue accumsan taciti gravida vivamus,
+              ullamcorper ultrices vivamus sociosqu vel aptent eu lacus himenaeos,
+             augue tempor amet rhoncus platea hendrerit fermentum euismod. </p>
+            <div id="input">
+                    <form method='POST'>
+                            {% csrf_token %}
+                            {{ form }}
+                            <button id="botao">Notify</button>
+                    </form>
+                <!-- <input id="email" type="email" name="" placeholder="Email Address">
+                <input id="botao" type="button" value="Notify"> -->
+            </div>
+        </div>
+        <iframe width="400px" height="260px" border-radius="200px" src="https://www.youtube.com/embed/WW_-oBp4qE8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <aside>
+        <div> 
+            <p class="texto2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                 Mauris interdum velit vitae nula molestie eu </br> commodo nulla dapib us.
+                Donec id sollicitudin urna. Integer at dui ac leo fermentum varius eleifend ut."
+            </p>
+            <p>Jane Hunt</p>
+            <div id="foto">
+                <img src="{% static 'images/pessoa1.jpg' %}">
+                <img src="{% static 'images/pessoa1.jpg' %}">
+                <img src="{% static 'images/pessoa1.jpg' %}">
+                <img src="{% static 'images/pessoa1.jpg' %}">
+                <img src="{% static 'images/pessoa1.jpg' %}">
+                <img src="{% static 'images/pessoa1.jpg' %}">
+                <img src="{% static 'images/pessoa1.jpg' %}">
+                <img src="{% static 'images/pessoa1.jpg' %}">
+                <img src="{% static 'images/pessoa1.jpg' %}">
+                <img src="{% static 'images/pessoa1.jpg' %}">
+                <img src="{% static 'images/pessoa1.jpg' %}">
+                <img src="{% static 'images/pessoa1.jpg' %}">
+                <img src="{% static 'images/pessoa1.jpg' %}">
+                <img src="{% static 'images/pessoa1.jpg' %}">
+                <img src="{% static 'images/pessoa1.jpg' %}">
+            </div>
+                <p >Say Hi & Get in Touch</p>
+                    <p class="texto2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse.</p>
+            <div class="iconsAside">
+                <a href=""><img src="{% static 'icons/icons8-twitter-52.png' %}" alt=""></a>
+                <a href=""><img src="{% static 'icons/icons8-f-do-facebook-48.png' %}" alt=""></a>
+                <a href=""><img src="{% static 'icons/pinterest.png' %}" alt=""></a>
+                <a href=""><img src="{% static 'icons/icons8-google-plus-50.png' %}" alt=""></a>
+                <a href=""><img src="{% static 'icons/icons8-linkedin-2-60.png' %}" alt=""></a>
+                <a href=""><img src="{% static 'icons/icons8-youtube-48.png' %}" alt=""></a>
+            </div>
+        </div>
+    </aside>
+    <footer>
+        <div>
+            <a href="">Contact</a>
+            <a href="">Download</a>
+            <a href="">Press</a>
+            <a href="">Email</a>
+            <a href="">Support</a>
+            <a href="">Privacy Policy</a>
+        </div>
+    </footer>
+
+{% endblock %}

@@ -1,0 +1,244 @@
+body{
+    margin:0;
+    display: grid;
+    grid-template-areas: 'header header header header'        
+                         'article article article article'
+                         'section section section section'
+                         'aside aside aside aside'
+                         'footer footer footer footer';
+    grid-template-rows:  90vh 50vh 62vh 62vh 20vh; 
+    grid-template-columns: 15vw 25vw;
+    background-color: limegreen;
+}
+ /* ESTÃOO E ORDEM DE ACORDO O HTML */
+
+header{
+    grid-area: header;
+    background-image: url("images/banner.png");
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0;
+    background-size: cover;
+}
+
+header .bloco{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header div #hand{
+    column-count: 3;
+    margin-top: 14.4vh;
+    height: 75vh;
+}
+
+header h1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Pacifico', cursive;
+    font-size: 34pt;
+    color: white;
+}
+
+#ponto{
+    margin: 0;
+    font-size: 28pt;
+    color: green;
+}
+
+header div p{
+    font-size: 16pt;
+    width: 400px;
+    color: white;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-weight: bold;
+}
+
+header #iconsBanner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 210px;
+}
+header #iconsBanner img{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 60px;
+    padding: 15px;
+
+}
+
+header #iconsBanner :hover{
+    background-color:  rgb(102, 189, 102);
+    border-radius: 60px;
+}
+
+article{
+    grid-area: article;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: none;
+}
+
+article div{
+    align-items: center;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    font-weight: gray;
+    justify-content: space-around;
+}
+
+article div img{
+    background-color:  rgb(102, 189, 102);
+    border-radius: 50%;
+    padding: 20px; 
+    margin-top: 30px;
+}
+
+article div p{
+    color: gray;
+    font-family: 'Mukta Vaani', sans-serif;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+}
+
+section{
+    grid-area: section;
+    background-color: rgb(202, 202, 202);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Mukta Vaani', sans-serif;
+
+}
+
+section #section{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    font-family: 'Mukta Vaani', sans-serif;
+    color: rgb(54, 45, 45);
+    
+}
+section h4{
+    font-size: 20px;
+    color: rgb(31, 30, 30);
+    font-style: normal
+}
+
+section p{
+    color: gray;
+}
+
+section #input{
+    display: flex;
+    justify-content: center;
+    height: 40px;  
+    font-family: 'Mukta Vaani', sans-serif;
+  
+}
+
+/* section #input #email{
+    border-radius: 10px 0 0 10px;
+    width: 250px;
+    height: 45px;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-size: 20px;
+    text-align: left;
+} */
+
+#id_email{
+    background-color: red;
+}
+
+section #input #botao{
+    border-radius: 0 10px 10px 0;
+    background-color: rgb(102, 189, 102);
+    height: 50px;
+    width: 120px;
+    color: white;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    }
+
+aside{
+    grid-area: aside;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Mukta Vaani', sans-serif;
+
+}
+
+aside .iconsAside img{
+    background-color: rgb(197, 195, 195);
+    border-radius: 50%;
+    height: 40px;
+}
+
+#textoAside{
+    width: 500px;
+}
+aside p{
+    font-family: 'Mukta Vaani', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+aside div .texto2{
+    align-items: center;
+    color: rgb(199, 199, 199);
+    justify-content: center;
+}
+aside .iconsAside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+aside .iconsAside :hover{
+    background-color: rgb(102, 189, 102);
+    border-radius: 50%;
+    height: 40px;
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgb(199, 199, 199);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-style: italic; 
+}
+
+footer div{
+    display: flex;
+    justify-content: space-around;
+    height: 20px;
+    width: 600px;
+}
+
+footer div a{
+    color: grey;
+    text-decoration: none;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-style: normal;
+    font-size: 15px;
+}
+
+footer div :hover{
+    text-decoration: underline;
+    color: grey;
+
+}
